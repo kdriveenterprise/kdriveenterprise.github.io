@@ -1,0 +1,90 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: custom_-_home_-_particles_-_v2
+  timestamp: 1475608600
+layout:
+  above: {  }
+  navigation: {  }
+  /intro/: {  }
+  /header/: {  }
+  /utility/: {  }
+  /testimonials/: {  }
+  /features/: {  }
+  /container-main/:
+    -
+      -
+        'main-leftbar 65': {  }
+      -
+        'main-rightbar 35': {  }
+  expanded: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+      class: g-flushed
+  header:
+    type: section
+    subtype: header
+    attributes:
+      boxed: ''
+      class: 'g-flushed'
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: 'g-flushed'
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  main-leftbar:
+    type: section
+    subtype: aside
+  main-rightbar:
+    type: section
+    subtype: aside
+  container-main:
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
